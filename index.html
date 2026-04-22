@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakersCreate</title>
+    <meta
+      name="description"
+      content="MakersCreate is a YSWS program where participants build 3D-printable projects, log their hours, and earn a free 3D printer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-a" aria-hidden="true"></div>
+      <div class="ambient ambient-b" aria-hidden="true"></div>
+
+      <header class="hero reveal" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">MakersCreate · YSWS</p>
+          <h1>Make things. Earn your printer.</h1>
+          <p class="lede">
+            Build 3D-printable projects, log your hours, and claim a free 3D printer once you hit the program target.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="primary-cta" href="https://auth.hackclub.com/" target="_blank" rel="noreferrer">
+              Get Started
+            </a>
+            <a class="button button-secondary" href="#how-it-works">See how it works</a>
+          </div>
+          <dl class="hero-metrics" aria-label="Program highlights">
+            <div>
+              <dt>Hours tracked</dt>
+              <dd>Manual journaling</dd>
+            </div>
+            <div>
+              <dt>Project rule</dt>
+              <dd>Must print</dd>
+            </div>
+            <div>
+              <dt>Reward</dt>
+              <dd>One free printer</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-card">
+          <div class="card-label-row">
+            <span class="mono">01</span>
+            <span class="card-label">Program snapshot</span>
+          </div>
+          <div class="card-graphic" aria-hidden="true">
+            <div class="ring ring-outer"></div>
+            <div class="ring ring-inner"></div>
+            <div class="ring ring-center"></div>
+          </div>
+          <div class="card-copy">
+            <p>
+              Not just CAD. Sculptures, functional parts, art objects, mechanisms, prototypes. If it prints, it counts.
+            </p>
+            <p class="card-note">Built for calm momentum, clear progress, and a straight path from effort to reward.</p>
+          </div>
+        </aside>
+      </header>
+
+      <main>
+        <section class="section reveal" id="what-is-this">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <div>
+              <p class="section-kicker">What is this?</p>
+              <h2>A focused YSWS for 3D-printable work.</h2>
+            </div>
+          </div>
+          <div class="section-grid two-col">
+            <p>
+              MakersCreate gives participants a concrete goal: spend real time making objects that can actually be
+              printed, reviewed, and shipped. The work can be artistic, mechanical, playful, or practical.
+            </p>
+            <p>
+              The site keeps the process legible. Every project has hours, notes, status, and a clear next step, so
+              builders always know where they stand.
+            </p>
+          </div>
+        </section>
+
+        <section class="section reveal" id="how-it-works">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <div>
+              <p class="section-kicker">How it works</p>
+              <h2>Five steps. No confusion.</h2>
+            </div>
+          </div>
+          <ol class="steps">
+            <li>
+              <span class="step-index">01</span>
+              <div>
+                <h3>Sign up with Hack Club</h3>
+                <p>Use Slack OAuth to confirm who you are and create your participant record.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-index">02</span>
+              <div>
+                <h3>Build a printable project</h3>
+                <p>Anything that can be printed counts, as long as the final result is genuinely 3D printable.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-index">03</span>
+              <div>
+                <h3>Log your hours</h3>
+                <p>Add journal entries for each session so progress is visible and reviewable.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-index">04</span>
+              <div>
+                <h3>Reach the target</h3>
+                <p>Once your approved hours cross the threshold, your account becomes eligible.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-index">05</span>
+              <div>
+                <h3>Claim your printer</h3>
+                <p>Submit shipping details and wait for the printer to arrive.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section reveal" id="rules">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <div>
+              <p class="section-kicker">Rules & eligibility</p>
+              <h2>Simple constraints. Clear expectations.</h2>
+            </div>
+          </div>
+          <div class="section-grid rules-grid">
+            <article class="rule-card">
+              <h3>Eligibility</h3>
+              <ul>
+                <li>Member of the Hack Club Slack community</li>
+                <li>Verified through Hack Club identity tooling</li>
+                <li>Not banned from Hackatime</li>
+                <li>Age range and shipping regions still to be finalized</li>
+              </ul>
+            </article>
+            <article class="rule-card">
+              <h3>Project rules</h3>
+              <ul>
+                <li>Every submitted project must be 3D printable</li>
+                <li>Hours are logged through the built-in journal</li>
+                <li>A public model link is required on submission</li>
+                <li>Minimum hours per project is still being finalized</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="faq">
+            <details>
+              <summary>Is this free?</summary>
+              <p>Yes. Participants who complete the program requirements earn a free printer.</p>
+            </details>
+            <details>
+              <summary>What counts as a 3D-printable project?</summary>
+              <p>Anything that can realistically be printed and shared as a printable model.</p>
+            </details>
+            <details>
+              <summary>What software can I use?</summary>
+              <p>The brief does not limit software. Use the tools that help you ship the work.</p>
+            </details>
+            <details>
+              <summary>How do I track my hours?</summary>
+              <p>With project journal entries inside the site. Hours are reviewed before they count.</p>
+            </details>
+            <details>
+              <summary>When do I get my printer?</summary>
+              <p>After your approved hours reach the threshold and you submit shipping details.</p>
+            </details>
+            <details>
+              <summary>What printer do I get?</summary>
+              <p>The final printer model is still being decided.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="section cta-band reveal" id="join">
+          <div>
+            <p class="section-kicker">Ready to start?</p>
+            <h2>Build hours with purpose.</h2>
+            <p>Keep the work visible. Keep the rules simple. Keep the path to the printer clear.</p>
+          </div>
+          <a class="button button-primary button-large" id="footer-cta" href="https://auth.hackclub.com/" target="_blank" rel="noreferrer">
+            Get Started
+          </a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <p class="eyebrow">MakersCreate</p>
+          <p>Yamauchi No.10 Family Office team</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://hackclub.com/" target="_blank" rel="noreferrer">Hack Club</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:hello@makerscreate.org">Contact</a>
+        </div>
+      </footer>
+    </div>
+
+    <nav class="sticky-cta" aria-label="Primary actions">
+      <a class="button button-secondary" href="#top">Back to top</a>
+      <a class="button button-primary" id="sticky-cta" href="https://auth.hackclub.com/" target="_blank" rel="noreferrer">
+        Get Started
+      </a>
+    </nav>
+  </body>
+</html>
